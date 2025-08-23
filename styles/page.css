@@ -1,0 +1,72 @@
+#page{
+    max-width: 1120px;
+    margin-inline: auto;
+
+    header{
+        img{
+            border-radius: 2.8rem;
+            margin-bottom: 2.4rem;
+            height: 66rem;
+        }
+        
+        p{
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+    .divider{
+        height: 1px;
+        background: var(--border-primary);
+        margin-block: 4rem;
+    }
+
+    .amantes-historia{
+        margin-bottom: 6.4rem;
+    }
+
+    .atividade_1,
+    .atividade_2,
+    .atividade_3
+    .atividade_4,
+    .atividade_5,
+    .atividade_6,
+    .atividade_7,
+    .atividade_8,{
+
+        img{
+            height: 35rem;
+            object-fit: cover;
+            border-radius: 2.8rem;
+            margin-bottom: 2rem;
+        }
+
+        h3{
+            font-size: 2.8rem;
+            margin-bottom: .4rem;
+        }
+        p{
+            margin-bottom: 2.4rem;
+        }
+    }
+    .atividade_1,
+    .atividade_2,
+    .atividade_3
+    .atividade_4,
+    .atividade_5,
+    .atividade_6,
+    .atividade_7,
+    .atividade_8,{
+
+        margin-bottom: 4.8rem;
+    
+        li{
+            color: var(--accent-blue);
+        }
+    }
+
+
+    footer p{
+        text-align: center;
+    }
+}
