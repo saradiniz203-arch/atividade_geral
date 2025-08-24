@@ -28,91 +28,136 @@
             <section class="destino_2">
                 <h3> 1. Como funciona a regra da cascata no CSS?</h3>
                 <img src="./WhatsApp Image 2025-08-23 at 18.50.53.jpeg" alt="cascata">
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+                
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+
 
             </ul>
             </section>
 
-            <section class="atividade_1">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+            <section class="destino_2">
+                <h3>  2. O que é especificidade</h3>
+                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*JomF5HW-CEKRR1xxZiHsvw.png" alt="especificidade">
+                
+                <p>Especificidade é um sistema de pontos usado para determinar qual regra CSS tem mais “peso”. <br>
+                    •	Seletor por tag (h1, p, div…) → especificidade baixa.<br>
+                    •	Seletor por classe (.nome), pseudo-classes (:hover, :first-child…) → especificidade média. <br>
+                    •	Seletor por id (#id) → especificidade alta.
+                Exemplo:
+                
+                h1 { color: blue; }        /* peso baixo */
+                .titulo { color: green; }  /* peso médio */
+                #principal { color: red; } /* peso alto */
+                
+                O #principal vence.</p>
+
+
+            </ul>
+            </section>
+
+            <section class="destino_2">
+                <h3>3. Combinação de seletores</h3>
+                <img src="https://storage.googleapis.com/dpw/app/uploads/2019/02/combinacao-seletores-css.jpg" alt="Combinação">
+                
+                <p>	•	Descendente (espaço) → .primeiro h1
+                    Aplica estilo a qualquer <h1> dentro de um elemento com classe .primeiro.
+                    
+                    .primeiro h1 { color: blue; }
+                    
+                        •	Filho direto ( > ) → .primeira > h1
+                    Aplica estilo apenas ao <h1> que é filho imediato de .primeira.
+                    
+                    .primeira > h1 { color: red; }
+                    
+                        •	Irmão adjacente ( + ) → .primeira h1 + h1
+                    Aplica estilo ao <h1> que vem logo depois de outro <h1> dentro de .primeira.
+                    
+                    .primeira h1 + h1 { color: green; }</p>
+
+
+            </ul>
+            </section>
+
+            <section class="destino_2">
+                <h3> 4. Pseudo-classes</h3>
+                <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9j91heov3ra6iew0ipll.jpg" alt=" Pseudo-classes
+                ">
+                
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+
 
             </ul>
             </section>
 
 
             <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+                <h3>  5. Diferença entre display inline e display block</h3>
+                <img src="https://i.ytimg.com/vi/hJ6nYCQLo2k/maxresdefault.jpg" alt="display">
+                
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
 
-            </ul>
-            </section>
-
-            <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
 
             </ul>
             </section>
 
 
             <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+                <h3>  6. Elementos padrão inline e block</h3>
+                <img src="https://cdn.melhoreshospedagem.com/wp/wp-content/uploads/2024/12/web-2-0.jpg" alt="Elementos">
+                
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+
 
             </ul>
             </section>
 
 
             <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+                <h3>
+                    7. Margin, Padding e Border</h3>
+                <img src="./web-design2.jpg" alt="">
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
 
-            </ul>
-            </section>
-
-
-            <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
 
             </ul>
             </section>
 
             <section class="destino_2">
-                <img src="./imagens-20250601T224429Z-1-001/imagens/Image_03.png" alt="Tempo Beomeo-sa">
-                <h3>2. Templo Beomeo-sa</h3>
-                <p>O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.</p>
-            <h4>Bom para:</h4>
-            <ul>
-                <li>História</li>
+                <h3>  8. box-sizing: border-box</h3>
+                <img src="./web-10-web-20.jpg" alt="cascata">
+                
+                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
+                    A ordem de prioridade é:
+                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
+                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
+                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
+                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+
 
             </ul>
             </section>

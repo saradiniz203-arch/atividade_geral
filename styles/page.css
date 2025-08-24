@@ -25,15 +25,7 @@
         margin-bottom: 6.4rem;
     }
 
-    .atividade_1,
-    .atividade_2,
-    .atividade_3
-    .atividade_4,
-    .atividade_5,
-    .atividade_6,
-    .atividade_7,
-    .atividade_8,{
-
+   
         img{
             height: 35rem;
             object-fit: cover;
@@ -48,23 +40,28 @@
         p{
             margin-bottom: 2.4rem;
         }
-    }
-    .atividade_1,
-    .atividade_2,
-    .atividade_3
-    .atividade_4,
-    .atividade_5,
-    .atividade_6,
-    .atividade_7,
-    .atividade_8,{
-
-        margin-bottom: 4.8rem;
     
+    
+        margin-bottom: 4.8rem;
+
         li{
             color: var(--accent-blue);
         }
-    }
+    
 
+    
+        ul{
+            li:nth-of-type(1){
+                color: var(--accent-purple);
+            }
+            li:nth-of-type(2){
+                color: var(--accent-pink);
+            }
+            li:nth-of-type(3){
+                color: var(--accent-orange);
+            }
+        }
+    
 
     footer p{
         text-align: center;
