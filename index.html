@@ -29,13 +29,16 @@
                 <h3> 1. Como funciona a regra da cascata no CSS?</h3>
                 <img src="./WhatsApp Image 2025-08-23 at 18.50.53.jpeg" alt="cascata">
                 
+                <div>
+                    <ol>
                 <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
                     A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
-
+                      <br>  <li>	Importância → Regras !important têm prioridade máxima. </li> <br>
+                      <li>	Especificidade → Regras mais específicas substituem as mais genéricas. </li>
+                        <br> <li>Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS. </li>
+                       <br>  <li>Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p> </li>
+                      </ol>
+                    </div>
 
             </ul>
             </section>
@@ -45,9 +48,14 @@
                 <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*JomF5HW-CEKRR1xxZiHsvw.png" alt="especificidade">
                 
                 <p>Especificidade é um sistema de pontos usado para determinar qual regra CSS tem mais “peso”. <br>
-                    •	Seletor por tag (h1, p, div…) → especificidade baixa.<br>
-                    •	Seletor por classe (.nome), pseudo-classes (:hover, :first-child…) → especificidade média. <br>
-                    •	Seletor por id (#id) → especificidade alta.
+                    <div>
+                        <ul>
+                            <li> Seletor por tag (h1, p, div…) → especificidade baixa.</li><br>
+                            <li>Seletor por classe (.nome), pseudo-classes (:hover, :first-child…) → especificidade média.</li><br>
+                            <li>Seletor por id (#id) → especificidade alta.</li>
+                    </ul>
+                    </div>
+                    	
                 Exemplo:
                 
                 h1 { color: blue; }        /* peso baixo */
@@ -63,56 +71,64 @@
             <section class="destino_2">
                 <h3>3. Combinação de seletores</h3>
                 <img src="https://storage.googleapis.com/dpw/app/uploads/2019/02/combinacao-seletores-css.jpg" alt="Combinação">
-                
-                <p>	•	Descendente (espaço) → .primeiro h1
-                    Aplica estilo a qualquer <h1> dentro de um elemento com classe .primeiro.
-                    
-                    .primeiro h1 { color: blue; }
-                    
-                        •	Filho direto ( > ) → .primeira > h1
-                    Aplica estilo apenas ao <h1> que é filho imediato de .primeira.
-                    
-                    .primeira > h1 { color: red; }
-                    
-                        •	Irmão adjacente ( + ) → .primeira h1 + h1
-                    Aplica estilo ao <h1> que vem logo depois de outro <h1> dentro de .primeira.
-                    
-                    .primeira h1 + h1 { color: green; }</p>
+                <div>
+                    <ul>
+                <p><li>	Descendente (espaço) → .primeiro h1
+                    Aplica estilo a qualquer h1> dentro de um elemento com classe .primeiro.</li>
+                    <br>
+                    <li>primeiro h1 { color: blue; }</li>
+                    <br>
+                    <li>  Filho direto ( > ) → .primeira > h1
+                    Aplica estilo apenas ao h1> que é filho imediato da primeira.</li>
+                    <br>
+                    <li> primeira > h1 { color: red; }</li>
+                    <br>
+                    <li>Irmão adjacente ( + ) → .primeira h1 + h1
+                    Aplica estilo ao h1> que vem logo depois de outro h1> dentro de .primeira.</li>
+                    <br>
+                    <li>  primeira h1 + h1 { color: green; }</li></p>
+                    </ul>
+                </div>
 
 
-            </ul>
+            
             </section>
 
             <section class="destino_2">
                 <h3> 4. Pseudo-classes</h3>
                 <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9j91heov3ra6iew0ipll.jpg" alt=" Pseudo-classes
                 ">
-                
-                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
-                    A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+                <div>
+                <ol>
+                <p>   <li> :first-child → seleciona o primeiro filho de um elemento. <br></li> 
+                    <li>:last-child → seleciona o último filho. <br></li> 
+                    <li>:nth-child(n) → seleciona o filho na posição n. (Ex: :nth-child(2) = segundo filho). </li> 
+                    	 <li>:nth-of-type(n) → parecido, mas conta apenas filhos do mesmo tipo de elemento.</li> </p>
+                    </ol>
+                </div>
 
-
-            </ul>
+            
             </section>
 
 
             <section class="destino_2">
                 <h3>  5. Diferença entre display inline e display block</h3>
                 <img src="https://i.ytimg.com/vi/hJ6nYCQLo2k/maxresdefault.jpg" alt="display">
+                <div>
+                <ul>
+                <p>	inline → ocupa apenas o espaço do conteúdo, não quebra linha. Não aceita width, height, margin-top, margin-bottom.
+                   <br> 	block → ocupa toda a largura disponível e sempre quebra a linha. Aceita todas as propriedades de tamanho e espaçamento.
                 
-                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
-                    A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
-
-
+                    <li>  Exemplo: </li> 
+                     </li>
             </ul>
+        </div>
+        <ol>
+        <li>span { display: inline; }  /* padrão */</li>
+        <li>div  { display: block; }   /* padrão */</li>
+    </ol>
+    </p>
+
             </section>
 
 
@@ -120,12 +136,9 @@
                 <h3>  6. Elementos padrão inline e block</h3>
                 <img src="https://cdn.melhoreshospedagem.com/wp/wp-content/uploads/2024/12/web-2-0.jpg" alt="Elementos">
                 
-                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
-                    A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+                <p>•	Inline: span>, a>, img>, strong>, em>, label>. <br>
+                    •	Block: div>, p>, h1>-h6>, section>, article>, header>, footer>.
+                </p>
 
 
             </ul>
@@ -136,12 +149,35 @@
                 <h3>
                     7. Margin, Padding e Border</h3>
                 <img src="./web-design2.jpg" alt="">
-                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
-                    A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+                <p>•	margin → espaço externo ao redor do elemento. <br>
+                    •	padding → espaço interno entre o conteúdo e a borda. <br>
+                    •	border → a borda do elemento em si. <br>
+                <br>
+                 Shorthand (atalhos): <br>
+                    • <mark>	1 valor</mark> → aplica a todos os lados. <br>
+                
+                <samp> margin:</samp> 10px;  /* 10px em todos os lados */
+                
+                <br> <br>
+                    • <mark>2 valores</mark> → primeiro valor = vertical (top/bottom), segundo = horizontal (left/right).
+                <br>
+                <samp> margin:</samp> 10px 20px;
+                
+                <br><br>
+                    •	 <mark>3 valores</mark> → topo / laterais / baixo.
+                <br>
+                <samp> margin:</samp>: 10px 20px 30px;
+                
+                <br><br>
+                    • <mark>4 valores</mark>	  → topo / direita / baixo / esquerda (sentido horário).
+                <br>
+               <samp> margin:</samp> margin: 10px 20px 30px 40px;
+                
+                <br><br>
+                
+                <mark> Sufixos: </mark>
+                    •	-top, -right, -bottom, -left → aplicam a um lado específico. <br>
+                    •	-inline, -block → controlam espaçamento em eixos inline (horizontal em idiomas LTR) e block (vertical).</p>
 
 
             </ul>
@@ -151,12 +187,20 @@
                 <h3>  8. box-sizing: border-box</h3>
                 <img src="./web-10-web-20.jpg" alt="cascata">
                 
-                <p>A cascata define como o navegador escolhe qual estilo aplicar quando existem várias regras para o mesmo elemento.
-                    A ordem de prioridade é:
-                      <br>  1.	Importância → Regras !important têm prioridade máxima. <br>
-                        2.	Especificidade → Regras mais específicas substituem as mais genéricas.
-                        <br>3.	Origem → Estilos inline (dentro do HTML) têm prioridade sobre os internos <strong>style</strong> e externos arquivos CSS.
-                       <br> 4.	Ordem de aparição → Se duas regras tiverem a mesma especificidade, a última lida pelo navegador prevalece.</p>
+                <p>Por padrão (content-box), o width e height aplicam apenas ao conteúdo, somando padding e border ao tamanho final.
+<br>
+                    Com box-sizing: border-box, o navegador inclui padding e border dentro do width/height → facilita muito no layout.
+                    </p>
+                    <p><mark>Exemplo:</mark>
+<br>
+                        div {
+                          width: 200px;<br>
+                          padding: 20px;<br>
+                          border: 5px solid black;<br>
+                          box-sizing: border-box;<br>
+                        }
+                         Nesse caso, o elemento terá 200px no total, e não 200 + 20 + 20 + 5 + 5.
+                        </p>
 
 
             </ul>
